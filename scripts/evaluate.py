@@ -1,3 +1,5 @@
+# Run this script to generate evaluations in the results folder. They will show up as metrics.json files.
+
 import os
 import re
 import json
@@ -339,5 +341,4 @@ def run_all_evaluations(base_dir):
             eval_obj.save_results()
 
 if __name__ == "__main__":
-    # NOTE: This script was for testing purposes and some metrics may be missing/inaccurate (e.g. depth inference time is not considered but should be)
     run_all_evaluations("./rob-530-slam-comparison/results")
